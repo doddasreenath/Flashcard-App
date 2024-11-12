@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div style="background-color: lightblue;" class="container">
+        <h1 style="color: orangered">Flashcard App</h1>
+        <div class="flashcard-form">
+            <h2 style="color: darkcyan; font-style:italic;">Add a Flashcard</h2>
+            <input type="text" id="new-question" placeholder="Enter Question" required>
+            <input type="text" id="new-answer" placeholder="Enter Answer" required>
+            <button onclick="addFlashcard()" style="color: aqua;">Add Flashcard</button>
+        </div>
+
+        <div id="flashcard-list">
+            <h2 style="font-family:cursive;">Your Flashcards</h2>
+            <ul id="flashcards"></ul>
+        </div>
+
+        <div id="edit-form" class="edit-form">
+            <h2>Edit Flashcard</h2>
+            <input type="text" id="edit-question" placeholder="Enter Question" required>
+            <input type="text" id="edit-answer" placeholder="Enter Answer" required>
+            <button onclick="saveEdit()">Save Changes</button>
+            <button onclick="cancelEdit()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
